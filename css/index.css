@@ -1,0 +1,190 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Comic Sans MS";
+  font-size: 20px;
+  background-color: transparent;
+}
+@keyframes animasi {
+  from {
+    font-weight: 0;
+    font-size: 0%;
+    color: white;
+  }
+  to {
+    font-weight: 700;
+    font-size: 100%;
+    color: rgba(200, 0, 0, 0.8);
+  }
+}
+@keyframes gambar {
+  from {
+    transform: rotate(0deg);
+    box-shadoow: 0px 0px 0px rgba(300, 200, 300, 0.7);
+  }
+  to {
+    transform: rotate(40deg);
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 50px 60px rgba(300, 200, 300, 0.7);
+  }
+}
+@keyframes huruf {
+  from {
+    transform: rotateZ(0deg);
+    color: blue;
+    font-size: 3em;
+    text-shadow: 0px 0px 0px red;
+  }
+  to {
+    transform: rotateZ(180deg);
+    color: transparent;
+    font-size: 7em;
+    text-shadow: 0px 10px 5px white;
+  }
+}
+.container {
+  display: auto;
+  padding: 0px;
+  width: 100vw;
+  height: content;
+  background-image: -webkit-linear-gradient(gray, blue,grey);
+  transition: 3s ease-in-out;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  width: 100%;
+  letter-spacing: 10px;
+  text-align: center;
+  height: 300px;
+  align-items: center;
+  transition: 2s;
+}
+/*.navbar:hover{
+  padding-top:60px;
+}*/
+.navbar ul {
+  display: grid;
+  grid-gap: 1em;
+  float: left;
+}
+.navbar > ul > li {
+  list-style-type: none;
+  padding: 0;
+  width: content;
+  height: 40px;
+  border-radius: 17px;
+  background-image: -webkit-linear-gradient(white, blue);
+  box-shadow: 0px 10px 20px rgba(400, 200, 300, 0.6);
+  cursor: pointer;
+}
+.navbar > ul > li > a {
+  animation: animasi 2s linear 3 alternate;
+  padding: 10px;
+  text-decoration: none;
+  text-shadow: 2px 2px 10px red;
+  text-align: center;
+}
+.navbar > img {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius:50%;
+  box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.7);
+  transition: 3s ease-out;
+  animation: gambar 2s forwards 2 alternate;
+}
+.navbar > img:hover {
+  box-shadow: 0px 100px 200px white;
+}
+.abjad {
+  display: grid;
+  width: 100%;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  grid-gap: 0px;
+}
+.huruf {
+  color: #8769d9cc;
+  height: 100%;
+  text-align: center;
+  font-family: Segoe UI;
+  font-size: 3em;
+  font-weight: 800;
+  text-shadow: 0px 4px 5px rgba(300, 300, 300, 0.4);
+  animation: huruf 2s linear 2 alternate;
+}
+.huruf:hover {
+  animation: huruf 2s linear infinite alternate;
+}
+/*content*/
+.conten {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-gap: 20px;
+  justify-content: space-around;
+  text-align: left;
+}
+.conten h3 {
+  margin-left: 10px;
+  padding: 10px;
+  color: grey;
+}
+.conten h4 {
+  color: grey;
+  margin-left: 10px;
+  padding-left: 30px;
+}
+.conten span {
+  color: red;
+  text-shadow: 0px 1px 3px #fff;
+}
+.conten p {
+  margin-top: -30px;
+  font-size: 20px;
+  font-family: Cursive;
+  padding: 30px;
+  transform: rotateY(50deg);
+  text-shadow: 0px 2px 3px red;
+}
+.conten img {
+  width: 100px;
+  height: 60px;
+  transition: 2s ease-in-out;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.6);
+}
+.conten img:hover {
+  width: 400px;
+  height: 330px;
+}
+
+.bawah {
+  display: grid;
+  position: sticky;
+  margin-bottom: 0px;
+  padding: 20px;
+  letter-spacing: 5px;
+}
+.bawah p {
+  color: red;
+  font-weight: 900;
+  transition: 2s;
+  font-size: 2em;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  opacity: 0.7;
+}
+.bawah p:hover {
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0px;
+  font-size: 10px;
+  margin: 0;
+}
